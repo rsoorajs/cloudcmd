@@ -140,13 +140,6 @@ function indexProcessing(options) {
         data = data
             .replace('icon-terminal', 'icon-terminal none');
     
-    if (noUserMenu)
-        data = data
-            .replace('icon-user-menu', 'icon-user-menu none');
-    else
-        data = data
-            .replace('icon-rename', 'icon-rename none');
-    
     const left = rendy(Template.panel, {
         side        : 'left',
         content     : panel,
