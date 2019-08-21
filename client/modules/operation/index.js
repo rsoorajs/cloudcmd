@@ -61,7 +61,7 @@ module.exports.init = promisify((callback) => {
     exec.series([
         DOM.loadSocket,
         (callback) => {
-            if (!config('progress') || config('dropbox'))
+            if (config('dropbox'))
                 return callback();
             
             const {
